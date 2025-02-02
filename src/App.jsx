@@ -40,7 +40,7 @@ function App() {
         {/* Botón SI */}
         <button
           className={`${isButtonDisabled ? 'bg-gray-500' : 'bg-rose-400'} absolute px-6 py-2 text-white rounded-lg transition duration-200`}
-          style={{ top: buttonPosition.top, left: buttonPosition.left, transform: 'translate(-50%, -50%)' }}
+          style={{ top: buttonPosition.top, left: buttonPosition.left, transform: 'translate(-50%, -35%)' }}
           onClick={handleYesClick}
           disabled={isButtonDisabled}
         >
