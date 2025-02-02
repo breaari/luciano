@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function App() {
   const [response, setResponse] = useState(null);
-  const [buttonPosition, setButtonPosition] = useState({ top: '50%', left: '53%' }); // Inicializar en el centro de la pantalla
+  const [buttonPosition, setButtonPosition] = useState({ top: '35%', left: '50%' }); // Inicializar en el centro de la pantalla
   const [isButtonDisabled, setIsButtonDisabled] = useState(false); // Estado para deshabilitar el botón "SI"
 
   const handleYesClick = () => {
@@ -40,7 +40,7 @@ function App() {
         {/* Botón SI */}
         <button
           className={`${isButtonDisabled ? 'bg-gray-500' : 'bg-rose-400'} absolute px-6 py-2 text-white rounded-lg transition duration-200`}
-          style={{ top: buttonPosition.top, left: buttonPosition.left, transform: 'translate(-50%, -35%)' }}
+          style={{ top: buttonPosition.top, left: buttonPosition.left, transform: 'translate(-50%, 50%)' }}
           onClick={handleYesClick}
           disabled={isButtonDisabled}
         >
